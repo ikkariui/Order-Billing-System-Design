@@ -1,0 +1,84 @@
+/* About Page Specific Styles */
+.hero-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/home.png') center/cover no-repeat !important;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin: -20px -50vw 0 -50vw;
+    padding: 120px 0 70px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-about h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 0 20px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px 15px;
+}
+
+.hero-about h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: #ff9f1c;
+    border-radius: 3px;
+}
+
+.hero-about p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-about {
+        padding: 80px 0 50px;
+    }
+    
+    .hero-about h1 {
+        font-size: 2rem;
+        padding: 0 20px 10px;
+    }
+    
+    .hero-about p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-about {
+        padding: 60px 0 40px;
+    }
+    
+    .hero-about h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-about p {
+        font-size: 0.9rem;
+    }
+}

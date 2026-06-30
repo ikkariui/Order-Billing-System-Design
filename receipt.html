@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Order Confirmation - La Rose de café</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/receipt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="La Rose de café" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container receipt-page">
+    <div class="container">
+        <div class="receipt-container">
+            <div class="receipt-header">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your order. We've received it and will begin processing shortly.</p>
+            </div>
+
+            <div class="receipt-details">
+                <div class="order-info">
+                    <div class="info-row">
+                        <span class="label">Order ID:</span>
+                        <span class="value">ORD1234567890</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Order Date:</span>
+                        <span class="value">June 30, 2026 at 1:30 AM</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Customer Name:</span>
+                        <span class="value">John Doe</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Email:</span>
+                        <span class="value">john.doe@example.com</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Phone:</span>
+                        <span class="value">+63 912 345 6789</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Delivery Method:</span>
+                        <span class="value">Home Delivery</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Delivery Address:</span>
+                        <span class="value">123 Main St, Dagupan City, Pangasinan 2400</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Payment Method:</span>
+                        <span class="value">Credit Card</span>
+                    </div>
+                </div>
+
+                <div class="order-items">
+                    <h3>Order Items</h3>
+                    <div class="item-list">
+                        <div class="item">
+                            <div class="item-details">
+                                <span class="item-name">Americano</span>
+                                <span class="item-qty">x2</span>
+                            </div>
+                            <span class="item-price">₱170.00</span>
+                        </div>
+                        <div class="item">
+                            <div class="item-details">
+                                <span class="item-name">Blueberry Cheesecake</span>
+                                <span class="item-qty">x1</span>
+                            </div>
+                            <span class="item-price">₱0.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-totals">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span>₱170.99</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Tax (8%):</span>
+                        <span>₱13.68</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Delivery Fee:</span>
+                        <span>₱70.00</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <strong>Total:</strong>
+                        <strong>₱254.67</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="receipt-actions">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Return to Home
+                </a>
+                <a href="menu.html" class="btn btn-outline">
+                    <i class="fas fa-utensils"></i> Order Again
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+    </main>
+
+    <!-- Main Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">La Rose de café</h3>
+                    <p class="footer-tagline">Premium coffee, freshly brewed, crafted with sophistication—Your new favorite café experience.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-text">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-text">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-text">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dagupan City, Philippines</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+6309260084397">+63 926 008 4397</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:degarp@gmail.com">degarp@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sun: 7:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Rose de café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

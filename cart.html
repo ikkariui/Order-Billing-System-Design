@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Your Shopping Cart - La Rose de café</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="La Rose de café" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                    </a>
+                </div>
+                <div class="nav-center">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container cart-page">
+    <div class="container">
+        <h1>Your Shopping Cart</h1>
+
+        <div class="cart-container">
+            <div class="cart-items">
+                <form method="post" action="">
+                    <div class="cart-header">
+                        <div>Item Details</div>
+                        <div>Unit Price</div>
+                        <div>Qty</div>
+                        <div>Subtotal</div>
+                        <div></div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="/assets/images/menu/Americano.png" 
+                                 alt="Americano" 
+                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                        </div>
+
+                        <div class="item-details">
+                            <h3 class="item-name">Americano</h3>
+                        </div>
+
+                        <div class="item-price" data-price="85.00" style="font-weight: 600; text-align: center; min-width: 60px;">
+                            ₱85.00
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <form method="post" action="" style="display: inline-flex; align-items: center;">
+                                <input type="hidden" name="item_key" value="1">
+                                <button type="button" class="quantity-btn minus">-</button>
+
+                                <input type="number"
+                                    name="quantity"
+                                    value="2"
+                                    min="1"
+                                    class="quantity-input"
+                                    readonly>
+
+                                <button type="button" class="quantity-btn plus">+</button>
+                            </form>
+                        </div>
+
+                        <div class="item-actions">
+                            <form method="post" action="" style="display: inline;">
+                                <input type="hidden" name="remove_item" value="1">
+                                <input type="hidden" name="item_key" value="1">
+                                <button type="submit" class="remove-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="/assets/images/Blueberry.png" 
+                                 alt="Blueberry Cheesecake" 
+                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                        </div>
+
+                        <div class="item-details">
+                            <h3 class="item-name">Blueberry Cheesecake</h3>
+                        </div>
+
+                        <div class="item-price" data-price="0.99" style="font-weight: 600; text-align: center; min-width: 60px;">
+                            ₱0.99
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <form method="post" action="" style="display: inline-flex; align-items: center;">
+                                <input type="hidden" name="item_key" value="2">
+                                <button type="button" class="quantity-btn minus">-</button>
+
+                                <input type="number"
+                                    name="quantity"
+                                    value="1"
+                                    min="1"
+                                    class="quantity-input"
+                                    readonly>
+
+                                <button type="button" class="quantity-btn plus">+</button>
+                            </form>
+                        </div>
+
+                        <div class="item-actions">
+                            <form method="post" action="" style="display: inline;">
+                                <input type="hidden" name="remove_item" value="1">
+                                <input type="hidden" name="item_key" value="2">
+                                <button type="submit" class="remove-item">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="cart-actions">
+                        <a href="menu.html" class="btn btn-outline btn-sm">
+                            <i class="fas fa-arrow-left"></i> Continue Shopping
+                        </a>
+                        <a href="#" class="btn btn-outline btn-sm clear-cart">
+                            <i class="fas fa-trash"></i> Clear Cart
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal (3 items):</span>
+                    <span class="subtotal-amount">₱170.99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (8%):</span>
+                    <span class="tax-amount">₱13.68</span>
+                </div>
+                <div class="summary-row total">
+                    <strong>Total:</strong>
+                    <strong class="grand-total-amount">₱184.67</strong>
+                </div>
+                <a href="checkout.html" class="btn btn-accent btn-block">
+                    Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <div class="payment-methods">
+                    <p>We accept:</p>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-cc-amex" title="American Express"></i>
+                        <i class="fab fa-cc-paypal" title="PayPal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+function updateQuantity(button, change) {
+    const form = button.closest('form');
+    const input = form.querySelector('.quantity-input');
+    let newValue = parseInt(input.value) + change;
+    
+    if (newValue < 1) newValue = 1;
+    
+    if (newValue !== parseInt(input.value)) {
+        input.value = newValue;
+        form.submit();
+    }
+}
+</script>
+
+    </main>
+
+    <!-- Main Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">La Rose de café</h3>
+                    <p class="footer-tagline">Premium coffee, freshly brewed, crafted with sophistication—Your new favorite café experience.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="social-text">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span class="social-text">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span class="social-text">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Dagupan City, Philippines</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+6309260084397">+63 926 008 4397</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:degarp@gmail.com">degarp@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sun: 7:00 AM - 10:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Rose de café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
